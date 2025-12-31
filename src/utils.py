@@ -19,3 +19,8 @@ def process_data_43(data):
     if data:
         return data.upper()
     return None
+
+// Add utility functions
+export const formatDate = (date: Date): string => {
+  return date.toISOString().split('T')[0];
+};
