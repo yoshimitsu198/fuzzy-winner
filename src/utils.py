@@ -24,3 +24,10 @@ def process_data_43(data):
 export const formatDate = (date: Date): string => {
   return date.toISOString().split('T')[0];
 };
+
+// Add error handling
+try {
+  const result = await fetch(url);
+} catch (error) {
+  console.error('Error:', error);
+}
