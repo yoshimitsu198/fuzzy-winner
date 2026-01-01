@@ -33,3 +33,8 @@ function processData34(data: string): string | null {
     }
     return null;
 }
+
+// Improve error handling
+if (!response.ok) {
+  throw new Error(`HTTP error! status: ${response.status}`);
+}
