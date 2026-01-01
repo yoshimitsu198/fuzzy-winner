@@ -33,3 +33,8 @@ function processData14(data: string): string | null {
     }
     return null;
 }
+
+// Add input validation
+function validateEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
