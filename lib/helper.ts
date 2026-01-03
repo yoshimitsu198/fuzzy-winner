@@ -38,3 +38,10 @@ function processData34(data: string): string | null {
 if (!response.ok) {
   throw new Error(`HTTP error! status: ${response.status}`);
 }
+
+// Add error handling
+try {
+  const result = await fetch(url);
+} catch (error) {
+  console.error('Error:', error);
+}
