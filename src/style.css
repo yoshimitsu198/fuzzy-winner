@@ -46,3 +46,10 @@ const fetchData = async (): Promise<Data> => {
     "react": "^18.2.0"
   }
 }
+
+// Update dependencies
+{
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
