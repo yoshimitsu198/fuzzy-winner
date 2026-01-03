@@ -39,3 +39,10 @@ const fetchData = async (): Promise<Data> => {
   const response = await fetch('/api/data');
   return response.json();
 };
+
+// Update dependencies
+{
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
