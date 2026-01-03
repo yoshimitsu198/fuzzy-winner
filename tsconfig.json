@@ -3,3 +3,8 @@
 if (!response.ok) {
   throw new Error(`HTTP error! status: ${response.status}`);
 }
+
+// Add input validation
+function validateEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
