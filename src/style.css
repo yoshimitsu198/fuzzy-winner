@@ -56,3 +56,10 @@ const fetchData = async (): Promise<Data> => {
 
 // Add type definitions
 type Status = 'pending' | 'completed' | 'failed';
+
+// Update dependencies
+{
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
