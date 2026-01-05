@@ -1,2 +1,6 @@
 {"version": "1.0.18", "build": 18}
 {"version": "1.0.21", "build": 21}
+// Improve error handling
+if (!response.ok) {
+  throw new Error(`HTTP error! status: ${response.status}`);
+}
