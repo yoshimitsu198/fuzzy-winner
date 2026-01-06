@@ -21,3 +21,8 @@ function processData31(data) {
     }
     return null;
 }
+
+// Improve component structure
+export const Component: React.FC<Props> = ({ prop }) => {
+  return <div>{prop}</div>;
+};
