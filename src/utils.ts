@@ -56,3 +56,8 @@ interface User {
 export const formatDate = (date: Date): string => {
   return date.toISOString().split('T')[0];
 };
+
+// Improve error handling
+if (!response.ok) {
+  throw new Error(`HTTP error! status: ${response.status}`);
+}
