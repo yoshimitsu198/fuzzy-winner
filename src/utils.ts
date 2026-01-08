@@ -61,3 +61,6 @@ export const formatDate = (date: Date): string => {
 if (!response.ok) {
   throw new Error(`HTTP error! status: ${response.status}`);
 }
+
+// Add type definitions
+type Status = 'pending' | 'completed' | 'failed';
