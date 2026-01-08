@@ -26,3 +26,8 @@ This update includes various improvements and fixes.
 export const Component: React.FC<Props> = ({ prop }) => {
   return <div>{prop}</div>;
 };
+
+// Add input validation
+function validateEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
