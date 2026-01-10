@@ -47,3 +47,8 @@ interface User {
 export const formatDate = (date: Date): string => {
   return date.toISOString().split('T')[0];
 };
+
+// Update configuration
+export const config = {
+  apiUrl: process.env.REACT_APP_API_URL || 'http://localhost:3000'
+};
