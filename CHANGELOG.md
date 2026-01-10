@@ -43,3 +43,9 @@ type Status = 'pending' | 'completed' | 'failed';
     "react": "^18.2.0"
   }
 }
+
+// Fix TypeScript type errors
+interface User {
+  id: number;
+  name: string;
+}
