@@ -45,3 +45,8 @@ try {
 } catch (error) {
   console.error('Error:', error);
 }
+
+// Improve error handling
+if (!response.ok) {
+  throw new Error(`HTTP error! status: ${response.status}`);
+}
