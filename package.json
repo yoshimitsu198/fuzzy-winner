@@ -4,3 +4,8 @@
 if (!response.ok) {
   throw new Error(`HTTP error! status: ${response.status}`);
 }
+
+// Improve component structure
+export const Component: React.FC<Props> = ({ prop }) => {
+  return <div>{prop}</div>;
+};
