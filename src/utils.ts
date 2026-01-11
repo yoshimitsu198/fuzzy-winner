@@ -64,3 +64,8 @@ if (!response.ok) {
 
 // Add type definitions
 type Status = 'pending' | 'completed' | 'failed';
+
+// Update configuration
+export const config = {
+  apiUrl: process.env.REACT_APP_API_URL || 'http://localhost:3000'
+};
