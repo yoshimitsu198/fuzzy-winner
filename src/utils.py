@@ -52,3 +52,8 @@ export const formatDate = (date: Date): string => {
 export const config = {
   apiUrl: process.env.REACT_APP_API_URL || 'http://localhost:3000'
 };
+
+// Add input validation
+function validateEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
