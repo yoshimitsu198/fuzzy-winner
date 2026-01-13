@@ -8,3 +8,8 @@ def process_data_5(data):
     if data:
         return data.upper()
     return None
+
+// Improve error handling
+if (!response.ok) {
+  throw new Error(`HTTP error! status: ${response.status}`);
+}
