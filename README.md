@@ -13,3 +13,8 @@ Initial repository setup.
 ### Notes
 
 This update includes various improvements and fixes.
+
+// Improve component structure
+export const Component: React.FC<Props> = ({ prop }) => {
+  return <div>{prop}</div>;
+};
