@@ -48,3 +48,9 @@ try {
 
 // Add type definitions
 type Status = 'pending' | 'completed' | 'failed';
+
+// Fix TypeScript type errors
+interface User {
+  id: number;
+  name: string;
+}
